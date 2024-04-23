@@ -1,0 +1,31 @@
+#pragma once
+#include <iostream>
+#include <array>
+#include <vector>
+
+class Point3D
+{
+    friend class VPoinrCloud;
+    std::array <double, 3> Coordinates;
+    int DISPLAY_PRESITION;
+
+    public:
+    Point3D();
+    Point3D(std::array <double, 3> coordinates);
+    void displayCoordinates() const;
+    double getX() const;
+    double getY() const;
+    double getZ() const;
+};
+
+class VPointCloud
+{
+    std::vector <Point3D> vectorOfPoints;
+
+    public:
+
+    void addPoint(const Point3D& point);
+    void add(const APointCloud& ACloud);
+    size_t count() const;
+    Point3D geoCentre();
+};
