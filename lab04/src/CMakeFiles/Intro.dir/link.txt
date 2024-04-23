@@ -1,0 +1,1 @@
+/usr/bin/c++ -g -rdynamic CMakeFiles/Intro.dir/Main.cpp.o CMakeFiles/Intro.dir/GOperations.cpp.o CMakeFiles/Intro.dir/GSeries.cpp.o -o Intro 
